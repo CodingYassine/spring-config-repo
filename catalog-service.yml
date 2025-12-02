@@ -1,11 +1,5 @@
 server:
   port: 8081
-
 spring:
-  application:
-    name: catalog-service
-
   datasource:
     url: jdbc:postgresql://localhost:5432/catalog
-    username: catalog_user
-    password: catalog_pass
