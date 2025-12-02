@@ -1,5 +1,12 @@
 server:
   port: 8081
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/catalog
+    username: catalog_user
+    password: catalog_pass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
