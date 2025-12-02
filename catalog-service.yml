@@ -3,8 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://postgres-catalog:5432/catalog
-
+    url: jdbc:postgresql://localhost:5432/catalog
+    username: catalog_user
+    password: catalog_pass
   jpa:
     hibernate:
       ddl-auto: update
