@@ -4,11 +4,9 @@ server:
 spring:
   application:
     name: catalog-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/catalogdb
-    username: catalog_user
-    password: secret
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
